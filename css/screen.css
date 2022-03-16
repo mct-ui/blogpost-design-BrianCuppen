@@ -68,6 +68,10 @@ h3 {
   font-family: 'Inter Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+* + h2 {
+  margin-top: 48px;
+}
+
 a {
   color: #00a1e6;
   transition: all 0.1s ease-in-out;
