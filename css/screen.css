@@ -186,11 +186,31 @@ a:focus {
     font-size: 58px;
     line-height: 64px;
   }
+  .c-article__header {
+    padding: 48px 48px 24px;
+  }
+  .c-article__author {
+    padding-bottom: 24px;
+  }
+  .c-article__body {
+    padding: 24px 48px;
+  }
 }
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
 @media (min-width: 992px) {
+  .c-article__body {
+    display: flex;
+    gap: 24px;
+  }
+  .c-article__content {
+    width: 75%;
+  }
+  .c-author {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -292,4 +312,32 @@ a:focus {
   align-items: center;
   margin-bottom: 24px;
   gap: 16px;
+}
+
+/*
+Components: Article
+*/
+
+.c-author__header,
+.c-article__body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-author__header {
+  padding: 24px 24px 0;
+}
+
+.c-article__body {
+  padding: 0 24px;
+}
+
+/*
+utilities: max-width
+---
+utility classes to put specific max widths onto elements
+*/
+
+.u-max-width-sm {
+  max-width: 36em;
 }
